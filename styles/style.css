@@ -286,6 +286,48 @@ header hr{
 }
 /* Feature section end */
 
+/* Host section start */
+#host{
+    padding-bottom: 7.5rem;
+}
+.host-content{
+    text-align: center;
+}
+.host-content h2{
+    margin-bottom: 2.5rem;
+}
+.host-card{
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.host-card-right{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 16px !important;
+}
+/* Host section end */
+
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
     .menu,
@@ -351,6 +393,25 @@ header hr{
     .feature-content h2{
         font-size: 2rem;
     }
+    .host-card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-card-right{
+        text-align: center;
+    }
+    .icons{
+        justify-content: center;
+    }
+    #host{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 3.75rem;
+        padding-bottom: 2.5rem;
+    }
+    .host-card{
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -392,5 +453,13 @@ header hr{
     iframe{
         width: 100%;
         height: 18.75rem;
+    }
+    #host{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-bottom: 2.5rem;
+    }
+    .host-card{
+        padding: 1.5rem;
     }
 }
