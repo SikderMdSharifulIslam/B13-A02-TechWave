@@ -25,6 +25,12 @@
 .bg-primary{
     background-color: #1A0B2E;
 }
+.bg-secondary{
+    background-color: #230E3D;
+}
+.bg-rectangle{
+    background-color: rgba(53, 17, 101, 0.4);
+}
 .text-white{
     color: white;
 }
@@ -44,7 +50,6 @@
     padding: 0.75rem 1.25rem;
     cursor: pointer;
 }
-
 /* font-sizes */
 .btn-text{
     font-size: 1rem;
@@ -59,6 +64,10 @@
     font-weight: 800;
     color: white;
     margin-bottom: 0.5rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .description{
     font-size: 1rem;
@@ -201,6 +210,44 @@ header hr{
 }
 /* About section end */
 
+/* Why choose section start */
+#why-choose{
+    padding: 7.5rem 1.25rem;
+}
+.why-choose-content{
+    text-align: center;
+}
+.why-choose-content h2{
+    margin-bottom: 2.5rem;
+}
+.layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+}
+.a{
+    grid-row: span 2;
+}
+.b, .c, .d{
+    grid-column: span 2;
+}
+.card-rectangle{
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.c-1{
+    padding-top: 6.7rem;
+    padding-bottom: 6.7rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+/* Why choose section end */
+
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
     .menu,
@@ -242,6 +289,12 @@ header hr{
     .about-content p, .about-content hr{
         margin-bottom: 2.5rem;  
     }
+    .layout{
+        display: block;
+    }
+    .card-rectangle{
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -255,5 +308,11 @@ header hr{
     .rates{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+    .layout{
+        display: block;
+    }
+    .card-rectangle{
+        padding: 1.5rem;
     }
 }
