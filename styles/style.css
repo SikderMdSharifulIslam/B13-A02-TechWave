@@ -7,125 +7,150 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 
 /* Utility Classes Start */
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* colors */
 .bg-gradient-1 {
     background: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
-.bg-primary{
+
+.bg-primary {
     background-color: #1A0B2E;
 }
-.bg-secondary{
+
+.bg-secondary {
     background-color: #230E3D;
 }
-.bg-rectangle{
+
+.bg-rectangle {
     background-color: rgba(53, 17, 101, 0.4);
 }
-.text-white{
+
+.text-white {
     color: white;
 }
-.text-green{
+
+.text-green {
     color: #00FF88;
 }
+
 /* buttons */
-.btn-small{
+.btn-small {
     border: none;
     border-radius: 10000px;
     padding: 0.75rem 1rem;
     cursor: pointer;
 }
-.btn-big{
+
+.btn-big {
     border: none;
     border-radius: 10000px;
     padding: 0.75rem 1.25rem;
     cursor: pointer;
 }
+
 /* font-sizes */
-.btn-text{
+.btn-text {
     font-size: 1rem;
     font-weight: 600;
 }
-.section-title{
+
+.section-title {
     font-size: 3rem;
     font-weight: 700;
 }
-.banner-title{
+
+.banner-title {
     font-size: 3.75rem;
     font-weight: 800;
     color: white;
     margin-bottom: 0.5rem;
 }
-.card-title{
+
+.card-title {
     font-size: 1.5rem;
     font-weight: 700;
 }
-.description{
+
+.description {
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* Utility Classes End */
 
 
 /* Navbar start */
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
-nav li{
+
+nav li {
     list-style: none;
 }
-nav button{
+
+nav button {
     color: white;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.25rem;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
 }
-.menu ul li{
+
+.menu ul li {
     margin-right: 2rem;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
-header hr{
+
+header hr {
     border: none;
     border-top: 1px solid #412567;
 }
+
 /* Navbar end */
 
 /* Banner start */
-.banner{
+.banner {
     background: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
-.banner-content{
+
+.banner-content {
     padding-top: 6.3125rem;
     padding-bottom: 6.3125rem;
     text-align: center;
     width: 100%;
 }
-.banner-img{
+
+.banner-img {
     position: relative;
     display: inline-block;
     margin-bottom: 2.6rem;
 }
-.banner-img p{
+
+.banner-img p {
     position: absolute;
     padding: 0.5rem 1rem;
     background-color: #00FF88;
@@ -136,185 +161,231 @@ header hr{
     z-index: 2;
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
 }
-.banner-img-1{
+
+.banner-img-1 {
     display: block;
     width: 100%;
 }
-.banner-img-2{
+
+.banner-img-2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.banner-content p{
+
+.banner-content p {
     margin-bottom: 1.5rem;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
 }
-.buttons button{
+
+.buttons button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     text-align: center;
 }
-.btn-2{
+
+.btn-2 {
     background: transparent;
     border: 1px solid #00FF88;
 }
+
 /* Banner end */
 
 /* About section start */
-#about{
+#about {
     text-align: center;
     padding-top: 3.125rem;
     padding-bottom: 7.5rem;
 }
-.about-content h2{
+
+.about-content h2 {
     margin-bottom: 1rem;
 }
-.about-content p{
+
+.about-content p {
     line-height: 1.25rem;
     margin-bottom: 5rem;
 }
-.about-content hr{
+
+.about-content hr {
     margin-bottom: 5rem;
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.rates{
+
+.rates {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
 }
-.rate{
+
+.rate {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.rate .number{
+
+.rate .number {
     font-size: 3rem;
     font-weight: 900;
 }
-.rate .number-s{
+
+.rate .number-s {
     font-size: 1.9rem;
     font-weight: 900;
 }
-.rate-text{
+
+.rate-text {
     font-size: 0.8rem;
 }
+
 /* About section end */
 
 /* Why choose section start */
-#why-choose{
+#why-choose {
     padding: 7.5rem 1.25rem;
 }
-.why-choose-content{
+
+.why-choose-content {
     text-align: center;
 }
-.why-choose-content h2{
+
+.why-choose-content h2 {
     margin-bottom: 2.5rem;
 }
-.layout{
+
+.layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
 }
-.a{
+
+.a {
     grid-row: span 2;
 }
-.b, .c, .d{
+
+.b,
+.c,
+.d {
     grid-column: span 2;
 }
-.card-rectangle{
+
+.card-rectangle {
     padding: 2.5rem;
     border-radius: 1.5rem;
     text-align: left;
     margin-bottom: 1rem;
 }
-.c-1{
+
+.c-1 {
     padding-top: 6.7rem;
     padding-bottom: 6.7rem;
 }
-.mb-1{
+
+.mb-1 {
     margin-bottom: 1rem;
 }
+
 /* Why choose section end */
 
 /* Feature section start */
-#feature{
+#feature {
     padding-top: 7.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
-.feature-content{
+
+.feature-content {
     text-align: center;
     padding-bottom: 7.5rem;
 }
-.feature-content h2{
+
+.feature-content h2 {
     margin-bottom: 2.5rem;
 }
-.card-container{
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
 
 }
-.card{
+
+.card {
     background-color: #250D44;
     border-radius: 1.5rem;
     overflow: hidden;
     text-align: left;
 }
-.card-foot{
+
+.card-foot {
     padding: 1.5rem;
 }
-.mt-0-75{
+
+.mt-0-75 {
     margin-bottom: 0.75rem;
 }
-.card-time{
+
+.card-time {
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 0.375rem;
 }
-.card-time-text{
+
+.card-time-text {
     padding-bottom: 0.25rem;
 }
+
 /* Feature section end */
 
 /* Host section start */
-#host{
+#host {
     padding-bottom: 7.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
-.host-content{
+
+.host-content {
     text-align: center;
 }
-.host-content h2{
+
+.host-content h2 {
     margin-bottom: 2.5rem;
 }
-.host-card{
+
+.host-card {
     padding: 2.5rem;
     border-radius: 2.5rem;
     display: flex;
     gap: 1.5rem;
 }
-.host-card-right{
+
+.host-card-right {
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 0.5rem;
     align-items: center;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     padding: 10px;
     border: 1px solid #533C72;
@@ -323,187 +394,246 @@ header hr{
     justify-content: center;
     align-items: center;
 }
-.icons img{
+
+.icons img {
     width: 16px !important;
 }
+
 /* Host section end */
 
 /* Footer start */
-footer{
+footer {
     background: url("../assets/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 }
-.footer-content{
+
+.footer-content {
     text-align: center;
-    padding-top:7.5rem;
-    padding-bottom:7.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
-.mb-2{
+
+.mb-2 {
     margin-bottom: 2rem;
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
+
 /* Footer end */
 
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
+
     .menu,
-    .nav-btn{
+    .nav-btn {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
     }
-    .banner-img{
-        width: 60%;
+
+    .ban {
+        background: url("../assets/hero-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
     }
-    .banner-img-2{
+
+    .banner-img {
+        width: 40%;
+    }
+
+    .banner-img-2 {
         width: 30%;
     }
-    .banner-content{
+
+    .banner-content {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
-        
+
     }
-    .banner{
-        background-size: cover;
+
+    .banner {
+        /* background-size: cover; */
     }
-    .banner-img{
+
+    .banner-img {
         margin-bottom: 1.5rem;
     }
-    #about{
+
+    #about {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-bottom: 2.5rem;
     }
-    #about h2{
+
+    #about h2 {
         font-size: 2rem;
     }
-    .rates{
+
+    .rates {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    .about-content p, .about-content hr{
-        margin-bottom: 2.5rem;  
+
+    .about-content p,
+    .about-content hr {
+        margin-bottom: 2.5rem;
     }
-    .layout{
+
+    .layout {
         display: block;
     }
-    .card-rectangle{
+
+    .card-rectangle {
         padding: 1.5rem;
     }
-    .card-container{
+
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    #why-choose{
+
+    #why-choose {
         padding-bottom: 2.5rem;
         padding-top: 2.5rem;
     }
-    #feature{
+
+    #feature {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-top: 2.5rem;
     }
-    .feature-content{
+
+    .feature-content {
         padding-bottom: 3.75rem;
     }
-    .feature-content h2{
+
+    .feature-content h2 {
         font-size: 2rem;
     }
-    .host-card{
+
+    .host-card {
         flex-direction: column;
         text-align: center;
     }
-    .host-card-right{
+
+    .host-card-right {
         text-align: center;
     }
-    .icons{
+
+    .icons {
         justify-content: center;
     }
-    #host{
+
+    #host {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-top: 3.75rem;
         padding-bottom: 2.5rem;
     }
-    .host-card{
+
+    .host-card {
         padding: 1.5rem;
     }
-    .footer-logo{
+
+    .footer-logo {
         max-width: 219px;
     }
-    .footer-icons{
+
+    .footer-icons {
         flex-wrap: wrap;
+        gap: 1rem;
     }
-    .footer-content{
+
+    .footer-content {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
-    footer{
-        background: url("../assets/footer-bg.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+
+    footer {
+        background-size: contain;
+    }
+
+    .mb-2 {
+        margin-bottom: 1.5rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .hamburger{
+    .hamburger {
         display: none;
     }
-    #about{
+
+    #about {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
-    .rates{
+
+    .rates {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    .layout{
+
+    .layout {
         display: block;
     }
-    .card-rectangle{
+
+    .card-rectangle {
         padding: 1.5rem;
     }
-    .card-container{
+
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    #why-choose{
+
+    #why-choose {
         padding-bottom: 2.5rem;
         padding-top: 2.5rem;
     }
-    #feature{
+
+    #feature {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-top: 2.5rem;
     }
-    .feature-content{
+
+    .feature-content {
         padding-bottom: 3.75rem;
     }
-    .feature-content h2{
+
+    .feature-content h2 {
         font-size: 2rem;
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: 18.75rem;
     }
-    #host{
+
+    #host {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-bottom: 2.5rem;
     }
-    .host-card{
+
+    .host-card {
         padding: 1.5rem;
     }
 }
