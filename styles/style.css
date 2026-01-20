@@ -328,6 +328,34 @@ header hr{
 }
 /* Host section end */
 
+/* Footer start */
+footer{
+    background: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.footer-content{
+    text-align: center;
+    padding-top:7.5rem;
+    padding-bottom:7.5rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+/* Footer end */
+
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
     .menu,
@@ -411,6 +439,22 @@ header hr{
     }
     .host-card{
         padding: 1.5rem;
+    }
+    .footer-logo{
+        max-width: 219px;
+    }
+    .footer-icons{
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    footer{
+        background: url("../assets/footer-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 }
 
