@@ -1,5 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+/* Utility Classes Start */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* colors */
+.bg-gradient-1 {
+    background: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+.bg-primary{
+    background-color: #1A0B2E;
+}
+
+/* buttons */
+.btn-small{
+    border: none;
+    border-radius: 10000px;
+    padding: 12px 16px;
+}
+
+/* font-sizes */
+.btn-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Utility Classes End */
+
+
+/* Navbar start */
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav li{
+    list-style: none;
+}
+nav button{
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-right: 32px;
+}
+.hamburger{
+    display: none;
+}
+hr{
+    border: none;
+    border-top: 1px solid #412567;
+}
+/* Navbar end */
+
+
+
+/* Media Query Responsive CSS */
+@media screen and (max-width: 576px) {
+    .menu,
+    .nav-btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .hamburger{
+        display: none;
+    }
 }
