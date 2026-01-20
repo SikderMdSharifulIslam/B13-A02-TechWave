@@ -232,8 +232,6 @@ header hr{
     grid-column: span 2;
 }
 .card-rectangle{
-    /* padding-left: 2.5rem;
-    padding-right: 2.5rem; */
     padding: 2.5rem;
     border-radius: 1.5rem;
     text-align: left;
@@ -247,6 +245,46 @@ header hr{
     margin-bottom: 1rem;
 }
 /* Why choose section end */
+
+/* Feature section start */
+#feature{
+    padding-top: 7.5rem;
+}
+.feature-content{
+    text-align: center;
+    padding-bottom: 7.5rem;
+}
+.feature-content h2{
+    margin-bottom: 2.5rem;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+
+}
+.card{
+    background-color: #250D44;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: left;
+}
+.card-foot{
+    padding: 1.5rem;
+}
+.mt-0-75{
+    margin-bottom: 0.75rem;
+}
+.card-time{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.375rem;
+}
+.card-time-text{
+    padding-bottom: 0.25rem;
+}
+/* Feature section end */
 
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
@@ -295,6 +333,24 @@ header hr{
     .card-rectangle{
         padding: 1.5rem;
     }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #why-choose{
+        padding-bottom: 2.5rem;
+        padding-top: 2.5rem;
+    }
+    #feature{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 2.5rem;
+    }
+    .feature-content{
+        padding-bottom: 3.75rem;
+    }
+    .feature-content h2{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -314,5 +370,27 @@ header hr{
     }
     .card-rectangle{
         padding: 1.5rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #why-choose{
+        padding-bottom: 2.5rem;
+        padding-top: 2.5rem;
+    }
+    #feature{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 2.5rem;
+    }
+    .feature-content{
+        padding-bottom: 3.75rem;
+    }
+    .feature-content h2{
+        font-size: 2rem;
+    }
+    iframe{
+        width: 100%;
+        height: 18.75rem;
     }
 }
