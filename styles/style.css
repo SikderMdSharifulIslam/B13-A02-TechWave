@@ -26,12 +26,24 @@
 .bg-primary{
     background-color: #1A0B2E;
 }
-
+.text-white{
+    color: white;
+}
+.text-green{
+    color: #00FF88;
+}
 /* buttons */
 .btn-small{
     border: none;
     border-radius: 10000px;
     padding: 12px 16px;
+    cursor: pointer;
+}
+.btn-big{
+    border: none;
+    border-radius: 10000px;
+    padding: 12px 16px;
+    cursor: pointer;
 }
 
 /* font-sizes */
@@ -43,7 +55,16 @@
     font-size: 3rem;
     font-weight: 700;
 }
-
+.banner-title{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 8px;
+}
+.description{
+    font-size: 1rem;
+    font-weight: 400;
+}
 /* Utility Classes End */
 
 
@@ -79,6 +100,71 @@ hr{
 }
 /* Navbar end */
 
+/* Banner start */
+.banner{
+    background: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner-content{
+    padding-top: 101px;
+    padding-bottom: 101px;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.banner-img{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
+.banner-img p{
+    position: absolute;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 1000px;
+    top: 2%;
+    left: 70%;
+    /* transform: translate(-0%, -0%); */
+    z-index: 2;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
+.banner-img-1{
+    display: block;
+    width: 100%;
+
+}
+.banner-img-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.banner-content p{
+    margin-bottom: 24px;
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+.btn-2{
+    background: transparent;
+    border: 1px solid #00FF88;
+}
+/* Banner end */
+
 
 
 /* Media Query Responsive CSS */
@@ -89,6 +175,23 @@ hr{
     }
     .hamburger{
         display: block;
+    }
+    .banner-img{
+        width: 60%;
+    }
+    .banner-img-2{
+        width: 30%;
+    }
+    .banner-content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+    }
+    .banner{
+        background-size: cover;
+    }
+    .banner-img{
+        margin-bottom: 24px;
     }
 }
 
